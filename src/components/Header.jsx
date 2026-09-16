@@ -153,8 +153,19 @@ export default function Header() {
                 <div className="elementor-widget-container">
                   <div className="sasi-menu-mobile sasi-cta-header">
                     <div id="mmenu-toggle" className={`mmenu-toggle ${mobileMenuOpen ? 'active' : ''}`} onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-                      <button type="button" aria-label="menu mobile">
-                        <i className="ss-menu1"></i>
+                      <button type="button" aria-label="menu mobile" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'none', border: 'none', color: '#fff', cursor: 'pointer', padding: 0 }}>
+                        {mobileMenuOpen ? (
+                          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                          </svg>
+                        ) : (
+                          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                          </svg>
+                        )}
                       </button>
                     </div>
                   </div>
@@ -195,13 +206,16 @@ export default function Header() {
                 </div>
               </div>
             </div>
-            <div className="elementor-element elementor-element-908d6f4 e-con-full e-flex e-con e-child" data-id="908d6f4" data-element_type="container" data-e-type="container">
+            <div className="elementor-element elementor-element-908d6f4 e-con-full e-flex e-con e-child" data-id="908d6f4" data-element_type="container" data-e-type="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '18px' }}>
               {/* Search Widget */}
               <div className="elementor-element elementor-element-447b0f8 elementor-widget elementor-widget-sasico-search" data-id="447b0f8" data-element_type="widget" data-e-type="widget" data-widget_type="sasico-search.default">
                 <div className="elementor-widget-container">
                   <div className="sasi-search sasi-cta-header">
-                    <div className={`toggle-search sasi-cta-icons ${searchOpen ? 'active' : ''}`} onClick={() => setSearchOpen(!searchOpen)}>
-                      <i className="ss-search"></i>
+                    <div className={`toggle-search sasi-cta-icons ${searchOpen ? 'active' : ''}`} onClick={() => setSearchOpen(!searchOpen)} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#fff', cursor: 'pointer' }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -211,8 +225,19 @@ export default function Header() {
                 <div className="elementor-widget-container">
                   <div className="sasi-menu-mobile sasi-cta-header">
                     <div id="mmenu-toggle" className={`mmenu-toggle ${mobileMenuOpen ? 'active' : ''}`} onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-                      <button type="button" aria-label="menu mobile">
-                        <i className="ss-menu1"></i>
+                      <button type="button" aria-label="menu mobile" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'none', border: 'none', color: '#fff', cursor: 'pointer', padding: 0 }}>
+                        {mobileMenuOpen ? (
+                          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                          </svg>
+                        ) : (
+                          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                          </svg>
+                        )}
                       </button>
                     </div>
                   </div>
@@ -275,10 +300,12 @@ export default function Header() {
                   <Link to="/products" onClick={closeMobile} style={{ flexGrow: 1 }}>Products</Link>
                   <span
                     className="arrow"
-                    style={{ padding: '8px 16px', cursor: 'pointer' }}
+                    style={{ padding: '8px 16px', cursor: 'pointer', display: 'inline-flex', alignItems: 'center', color: '#fff' }}
                     onClick={(e) => { e.preventDefault(); setProductsSubmenuOpen(!productsSubmenuOpen); }}
                   >
-                    <i className={productsSubmenuOpen ? "ss-angle-up" : "ss-angle-down"}></i>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ transform: productsSubmenuOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s ease' }}>
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
                   </span>
                 </div>
                 <ul className="sub-menu" style={{ display: productsSubmenuOpen ? 'block' : 'none' }}>
