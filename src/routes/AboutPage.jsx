@@ -41,7 +41,7 @@ export default function AboutPage({ onOpenQuote }) {
 
           <div className="story-media-card card-dark">
             <img 
-              src="/assets/images/2026/08/2-1.png" 
+              src="/assets/images/2026/08/2-1.webp" 
               alt="Zuper LED Manufacturing Facility" 
             />
             <div className="story-stat-float">

@@ -58,7 +58,7 @@ export default function DatawallPage({ onOpenQuote }) {
         {/* Visual Showcase */}
         <div className="card-dark datawall-hero-card">
           <img 
-            src="/assets/images/2026/08/2-1.png" 
+            src="/assets/images/2026/08/2-1.webp" 
             alt="Zuper Datawall Command Center Installation" 
           />
           <div className="datawall-specs-bar">

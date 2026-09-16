@@ -78,7 +78,7 @@ export default function ProductDetailPage({ onOpenQuote }) {
 
             <div className="detail-media-card">
               <img 
-                src={product.cardImage || "/assets/images/2026/08/1-1.png"} 
+                src={product.cardImage || "/assets/images/2026/08/1-1.webp"} 
                 alt={currentTitle} 
               />
               {product.brightness && (

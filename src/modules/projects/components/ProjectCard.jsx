@@ -7,7 +7,7 @@ export default function ProjectCard({ project, onPreview }) {
     <div className="project-card">
       <div className="project-card-image-wrap" onClick={() => onPreview && onPreview(project)}>
         <img 
-          src={project.image || "/assets/images/2026/08/1-1.png"} 
+          src={project.image || "/assets/images/2026/08/1-1.webp"} 
           alt={project.name} 
           loading="lazy" 
         />

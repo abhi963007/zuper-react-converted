@@ -957,7 +957,7 @@ big {
 }
 
 .site-overlay {
-  cursor: url(/assets/images/theme/close.png) 16 16, default;
+  cursor: url(/assets/images/theme/close.webp) 16 16, default;
   background: var(--sasi-bg-dark-overlay);
   width: 100vw;
   height: calc(100vh + 1px);

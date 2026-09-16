@@ -8,7 +8,7 @@ export default function ProductCard({ product, onOpenQuote }) {
     <div className="product-card">
       <div className="product-card-media">
         <img 
-          src={product.cardImage || "/assets/images/2026/08/1-1.png"} 
+          src={product.cardImage || "/assets/images/2026/08/1-1.webp"} 
           alt={product.name} 
           loading="lazy" 
         />

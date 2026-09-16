@@ -65,7 +65,7 @@ export default function Header() {
                 <div className="elementor-widget-container">
                   <div className="the-logo">
                     <Link to="/" onClick={closeMobile}>
-                      <img src="/assets/images/2025/09/Main-Logo-Zuper-Transparent-scaled.png" alt="Zuper LED" />
+                      <img src="/assets/images/2025/09/Main-Logo-Zuper-Transparent-scaled.webp" alt="Zuper LED" />
                     </Link>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ export default function Header() {
                 <div className="elementor-widget-container">
                   <div className="the-logo">
                     <Link to="/" onClick={closeMobile}>
-                      <img src="/assets/images/2025/09/Main-Logo-Zuper-Transparent-scaled.png" alt="Zuper LED" />
+                      <img src="/assets/images/2025/09/Main-Logo-Zuper-Transparent-scaled.webp" alt="Zuper LED" />
                     </Link>
                   </div>
                 </div>

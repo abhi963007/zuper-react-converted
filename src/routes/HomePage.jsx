@@ -53,7 +53,7 @@ export default function HomePage({ onOpenQuote }) {
             loop 
             muted 
             playsInline
-            poster="/assets/images/2026/07/Hero-temp-001.png"
+            poster="/assets/images/2026/07/Hero-temp-001.webp"
           >
             <source src="/assets/images/2026/08/zuperled_hero_720p_ultralight.mp4" type="video/mp4" />
           </video>
@@ -201,7 +201,7 @@ export default function HomePage({ onOpenQuote }) {
               <img 
                 src="/assets/images/2026/08/DW-DS-Combined.pdf" 
                 alt="Zuper Factory Manufacturing"
-                onError={(e) => { e.target.src = "/assets/images/2026/08/1-1.png"; }}
+                onError={(e) => { e.target.src = "/assets/images/2026/08/1-1.webp"; }}
               />
               <div className="visual-badge-overlay">
                 <span className="badge-highlight">35,000+ SQFT</span>

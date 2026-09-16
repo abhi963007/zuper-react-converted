@@ -76,7 +76,7 @@ export default function RDPage({ onOpenQuote }) {
 
           <div className="story-media-card card-dark">
             <img 
-              src="/assets/images/2026/08/3-2.png" 
+              src="/assets/images/2026/08/3-2.webp" 
               alt="Zuper Optical Laboratory" 
             />
             <div className="story-stat-float">
@@ -134,7 +134,7 @@ export default function RDPage({ onOpenQuote }) {
 
             <div className="testing-visual">
               <img 
-                src="/assets/images/2026/08/1-1.png" 
+                src="/assets/images/2026/08/1-1.webp" 
                 alt="Environmental Testing Chamber" 
                 style={{ borderRadius: 'var(--radius-md)' }}
               />
