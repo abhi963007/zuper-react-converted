@@ -1,0 +1,344 @@
+.corporate-page {
+  padding-top: 100px;
+}
+
+/* Story Section */
+.story-section {
+  margin-bottom: 5rem;
+}
+
+.story-p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.story-media-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 440px;
+  padding: 0;
+}
+
+.story-media-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-stat-float {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background: rgba(9, 13, 22, 0.9);
+  border: 1px solid var(--primary);
+  padding: 1.2rem 1.8rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.story-stat-float h3 {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+}
+
+.story-stat-float p {
+  color: var(--text-white);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Values Cards */
+.value-card {
+  padding: 2.2rem;
+}
+
+.value-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: rgba(219, 251, 4, 0.1);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.value-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-white);
+}
+
+.value-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Certifications */
+.cert-section {
+  padding: 3rem;
+  margin: 4rem 0;
+}
+
+.cert-box {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--radius-md);
+}
+
+.cert-icon {
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+}
+
+.cert-box h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.cert-box p {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.about-cta {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(14, 20, 33, 0.9), rgba(9, 13, 22, 0.95));
+  border: 1px solid rgba(219, 251, 4, 0.3);
+  border-radius: var(--radius-lg);
+  margin-top: 4rem;
+}
+
+.about-cta h3 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-cta p {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* R&D Cards */
+.rd-card {
+  padding: 2.5rem;
+}
+
+.rd-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: rgba(219, 251, 4, 0.1);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.rd-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.rd-card p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.testing-box {
+  padding: 3rem;
+}
+
+.testing-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.testing-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-white);
+  font-size: 0.95rem;
+}
+
+/* Datawall */
+.datawall-hero-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+.datawall-hero-card img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.datawall-specs-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(14, 20, 33, 0.95);
+  border-top: 1px solid var(--border-light);
+  padding: 1.5rem 2rem;
+}
+
+.spec-stat {
+  text-align: center;
+}
+
+.spec-stat .val {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.spec-stat .lbl {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.sector-tile {
+  padding: 1.8rem;
+}
+
+.sector-tile h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-white);
+}
+
+.sector-tile p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Contact Page Specifics */
+.contact-main-grid {
+  gap: 3rem;
+}
+
+.office-card {
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.office-city {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-white);
+}
+
+.office-entity {
+  font-size: 0.85rem;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.office-street {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--primary);
+}
+
+.office-contact-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-light);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  color: var(--text-white);
+  transition: var(--transition);
+}
+
+.contact-pill:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.whatsapp-pill {
+  background: rgba(37, 211, 102, 0.15);
+  border-color: rgba(37, 211, 102, 0.4);
+  color: #25d366;
+}
+
+.whatsapp-pill:hover {
+  background: #25d366;
+  color: #ffffff;
+}
+
+.office-hours {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.contact-form-col {
+  padding: 2.5rem;
+}
+
+.contact-success-alert {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.contact-success-alert h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-success-alert p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .contact-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .datawall-specs-bar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}

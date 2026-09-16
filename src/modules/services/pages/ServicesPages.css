@@ -1,0 +1,171 @@
+.services-page {
+  padding-top: 100px;
+}
+
+.services-work-banner {
+  margin-top: 4rem;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: linear-gradient(135deg, rgba(14, 20, 33, 0.95), rgba(9, 13, 22, 0.9));
+  border: 1px solid rgba(219, 251, 4, 0.3);
+}
+
+.work-banner-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.work-banner-text p {
+  color: var(--text-muted);
+  max-width: 650px;
+  font-size: 0.95rem;
+}
+
+/* Service Detail Page */
+.service-detail-page {
+  padding-top: 90px;
+}
+
+.service-detail-hero {
+  background: linear-gradient(180deg, #0e1421 0%, #090d16 100%);
+  border-bottom: 1px solid var(--border-light);
+  padding: 3rem 0 4rem;
+}
+
+.service-detail-h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.75rem;
+  max-width: 860px;
+}
+
+.service-detail-sub {
+  font-size: 1.25rem;
+  color: var(--secondary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.service-detail-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 780px;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.service-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.service-detail-body {
+  padding: 3rem 1.5rem 6rem;
+}
+
+.benefits-section {
+  padding: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.benefits-section h3 {
+  font-size: 1.4rem;
+}
+
+.benefit-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.benefit-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.benefit-box p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Applications Pills */
+.applications-section {
+  margin-bottom: 4rem;
+}
+
+.app-pills-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.app-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.app-icon {
+  color: var(--primary);
+}
+
+/* Steps */
+.step-card {
+  padding: 2rem;
+  position: relative;
+}
+
+.step-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.step-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-white);
+}
+
+.step-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.service-bottom-cta {
+  padding: 3.5rem;
+  margin-top: 4rem;
+  background: linear-gradient(135deg, rgba(14, 20, 33, 0.9), rgba(9, 13, 22, 0.95));
+  border: 1px solid rgba(219, 251, 4, 0.3);
+}
+
+.service-bottom-cta h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-bottom-cta p {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .services-work-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

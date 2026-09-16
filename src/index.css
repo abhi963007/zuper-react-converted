@@ -1,0 +1,208 @@
+/* Custom Enhancements & Overrides for Zuper LED React App */
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix Elementor Hotspot interactive tooltips on hover */
+.e-hotspot {
+  cursor: pointer;
+}
+.e-hotspot:hover .e-hotspot__tooltip,
+.e-hotspot.e-hotspot--active .e-hotspot__tooltip {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+/* Ensure animated elements are visible when triggered */
+.elementor-element.animated {
+  visibility: visible !important;
+}
+
+/* Ensure Elementor & Sasi SVG icons scale and display cleanly */
+.sasi-icon svg,
+.sasi-icon-box__icon svg,
+svg.e-font-icon-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  color: var(--sasi-btn-icon-color, #090D16);
+  vertical-align: middle;
+}
+.sasi-icon svg path,
+.sasi-icon-box__icon svg path,
+svg.e-font-icon-svg path {
+  fill: currentColor;
+}
+
+/* Video & Generic Modal Dialogs */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(9, 13, 22, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: #0e1421;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  max-width: 580px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+  animation: modalFadeIn 0.25s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Prime Slider (Tango & others) visibility and layout */
+[class*="elementor-widget-prime-slider-"] .swiper {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.bdt-prime-slider-tango {
+  overflow: visible !important;
+}
+
+.bdt-prime-slider-tango .swiper-tango {
+  overflow: hidden !important;
+}
+
+/* Ensure active slide has full visibility and clip-path expansion */
+.bdt-prime-slider-tango .bdt-item.swiper-slide-active {
+  clip-path: inset(0 0 0 0) !important;
+}
+
+/* Ensure navigation arrows are clickable and above slides */
+.bdt-prime-slider-tango .bdt-navigation-arrows {
+  z-index: 20 !important;
+  pointer-events: auto !important;
+}
+
+.bdt-prime-slider-tango .bdt-navigation-arrows .bdt-slidenav {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+}
+
+.bdt-prime-slider-tango .bdt-navigation-arrows .bdt-slidenav i {
+  pointer-events: none;
+}
+
+/* =========================================================
+   ThePlus Animate-General & Timeline Card Animations
+   ========================================================= */
+
+/* Base animate-general class with smooth cubic-bezier transitions */
+.animate-general {
+  opacity: 0;
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Initial directional offsets for timeline content cards */
+.timeline-left-content .animate-general,
+.animate-general[data-animate-type*="slideDownIn"] {
+  transform: translateY(-30px);
+}
+
+.timeline-right-content .animate-general,
+.animate-general[data-animate-type*="slideRightIn"] {
+  transform: translateX(40px);
+}
+
+.animate-general[data-animate-type*="slideLeftIn"] {
+  transform: translateX(-40px);
+}
+
+.animate-general[data-animate-type*="slideUpIn"] {
+  transform: translateY(30px);
+}
+
+/* Entrance animated state: fully visible with translate(0, 0) */
+.animate-general.animation-done,
+.animate-general.animated {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+  visibility: visible !important;
+}
+
+/* Timeline Cards Elevation & Hover Transitions */
+.pt-plus-timeline-list .timeline-item-content {
+  transition: transform 0.35s ease, box-shadow 0.35s ease !important;
+}
+
+.pt-plus-timeline-list .timeline-inner-block:hover .timeline-item-content {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Dynamic Glowing Accent for Timeline Draw Track */
+.pt-plus-timeline-list .timeline-track-draw {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px !important;
+  margin-left: -1.5px !important;
+  background: var(--e-global-color-c64a00d, #B9FB6A) !important;
+  box-shadow: 0 0 10px rgba(185, 251, 106, 0.6);
+  z-index: 2;
+  transition: height 0.1s ease-out;
+  border-radius: 2px;
+}
+
+@media (max-width: 730px) {
+  .pt-plus-timeline-list.layout-both:not(.timeline-left-align) .timeline-track-draw {
+    left: 5% !important;
+  }
+}
+
+/* =========================================================
+   Portfolio / Product Category Isotope Filter Styles
+   ========================================================= */
+
+.isotope-filter .filter-item {
+  cursor: pointer !important;
+  user-select: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.isotope-filter .filter-item:hover {
+  background-color: var(--sasi-color-primary, #dbfb04) !important;
+  border-color: var(--sasi-color-primary, #dbfb04) !important;
+  color: #090d16 !important;
+  transform: translateY(-2px);
+}
+
+.isotope-filter .filter-item.active {
+  background-color: var(--sasi-color-primary, #dbfb04) !important;
+  border-color: var(--sasi-color-primary, #dbfb04) !important;
+  color: #090d16 !important;
+  box-shadow: 0 0 16px rgba(219, 251, 4, 0.4);
+}
+
+/* Smooth transition for masonry items during filter/sorting */
+.projects-masonry {
+  transition: height 0.4s ease;
+}
+
+.projects-masonry .project-item {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+}
+
+
+
