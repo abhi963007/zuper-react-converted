@@ -171,12 +171,6 @@ export default function Header({ onOpenQuote }) {
                 R&D
               </Link>
             </li>
-
-            <li>
-              <Link to="/contact-us" className={`nav-link ${location.pathname === '/contact-us' ? 'active' : ''}`}>
-                Contact
-              </Link>
-            </li>
           </ul>
         </nav>
 

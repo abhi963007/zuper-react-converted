@@ -140,9 +140,6 @@ export default function Header() {
                       <li id="menu-item-6978" className={`menu-item menu-item-type-post_type menu-item-object-page ${isRD ? 'current-menu-item page_item current_page_item' : ''} menu-item-6978`}>
                         <Link to="/r-d">R &amp; D</Link>
                       </li>
-                      <li id="menu-item-7561" className={`menu-item menu-item-type-post_type menu-item-object-page ${isContact ? 'current-menu-item page_item current_page_item' : ''} menu-item-7561`}>
-                        <Link to="/contact-us">Contact Us</Link>
-                      </li>
                     </ul>
                   </nav>
                 </div>
